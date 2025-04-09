@@ -1,0 +1,52 @@
+{
+    "Management Master": {
+      "Nodes": [
+        {
+          "Name": "ncn-m001",
+          "Status": "Ready"
+        }
+      ],
+      "Type": "Kubernetes Topology Zone"
+    },
+    "Management Masters": 1,
+    "Management Storage": {
+      "Nodes": [
+        {
+          "Name": "ncn-s001",
+          "OSDs": {
+            "up": [
+              "osd.3",
+              "osd.7",
+              "osd.11",
+              "osd.14",
+              "osd.17",
+              "osd.20",
+              "osd.22",
+              "osd.25"
+            ]
+          },
+          "Status": "Ready"
+        }
+      ],
+      "Type": "CEPH Zone"
+    },
+    "Management Worker": {
+      "Nodes": [
+        {
+          "Name": "ncn-w001",
+          "Status": "Ready"
+        },
+        {
+          "Name": "ncn-w002",
+          "Status": "Ready"
+        },
+        {
+          "Name": "ncn-w005",
+          "Status": "Ready"
+        }
+      ],
+      "Type": "Kubernetes Topology Zone"
+    },
+    "Management Workers": 3,
+    "Zone Name": "x3000"
+  }

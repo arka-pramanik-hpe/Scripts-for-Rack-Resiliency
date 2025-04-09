@@ -1,0 +1,33 @@
+    "Management Masters" = 1
+    "Management Workers" = 3
+    "Zone Name" = "x3000"
+
+    ["Management Master"]
+    Type = "Kubernetes Topology Zone"
+    [["Management Master".Nodes]]
+    Name = "ncn-m001"
+    Status = "Ready"
+
+    ["Management Storage"]
+    Type = "CEPH Zone"
+    [["Management Storage".Nodes]]
+    Name = "ncn-s001"
+    Status = "Ready"
+
+    ["Management Storage".Nodes.OSDs]
+    up = [ "osd.3", "osd.7", "osd.11", "osd.14", "osd.17", "osd.20", "osd.22", "osd.25",]
+
+    ["Management Worker"]
+    Type = "Kubernetes Topology Zone"
+    [["Management Worker".Nodes]]
+    Name = "ncn-w001"
+    Status = "Ready"
+
+    [["Management Worker".Nodes]]
+    Name = "ncn-w002"
+    Status = "Ready"
+
+    [["Management Worker".Nodes]]
+    Name = "ncn-w005"
+    Status = "Ready"
+

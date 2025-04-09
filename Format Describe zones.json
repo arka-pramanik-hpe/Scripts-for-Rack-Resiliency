@@ -1,0 +1,46 @@
+{
+  "zone_name": "rack1",
+  "no_of_active_nodes": 3,
+  "no_of_nodes": 4,
+  "no_of_not_ready_nodes": 0,
+  "nodes": {
+    "masters": [
+      {
+        "name": "ncn-m001",
+        "status": "Ready"
+      }
+    ],
+    "storage": [
+      {
+        "name": "ncn-s003",
+        "status": "Ready", //KEEP IT - logic to be changed - ceph orch host ls | ceph cephadm check host ncn-s001
+        "osds": [
+          {
+            "name": "osd.1",
+            "status": "Up"
+          },
+          {
+            "name": "osd.2",
+            "status": "Up"
+          },
+          {
+            "name": "osd.3",
+            "status": "Up"
+          }
+        ]
+        
+      }
+    ],
+    "workers": [
+      {
+        "name": "ncn-w001",
+        "status": "Ready"
+      },
+      {
+        "name": "ncn-w002",
+        "status": "Ready"
+      }
+    ]
+  }
+
+}
